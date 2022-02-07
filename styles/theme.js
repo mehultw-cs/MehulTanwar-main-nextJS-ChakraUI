@@ -213,7 +213,7 @@ const config = {
 const overrides = {
   ...chakraTheme,
   fonts,
-  breakpoints,
+  breakpoints, 
   fontWeights: {
     normal: 300,
     medium: 600,
