@@ -1,0 +1,18 @@
+// Wraps content of the page in the Inxex.js file, all the page stuff can be built under this Container component.
+
+import react from 'react';
+import { useColorMode, Button, Flex, Box } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import styled from '@emotion/styled'
+
+import ColorModeSwitch from '../ColorModeSwitch'
+
+const Container = ({  children  }) => {
+return(
+<>
+    Container
+</>)
+}
+
+export default Container;
+

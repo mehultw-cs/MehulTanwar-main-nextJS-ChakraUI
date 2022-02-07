@@ -1,19 +1,36 @@
 {
-  "name": "mehultanwar-nextjs",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.9",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "8.7.0",
-    "eslint-config-next": "12.0.9"
-  }
+    "name": "mehultanwar-nextjs",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "tailwindcss": "postcss tailwind.css -o app_tailwind.css"
+    },
+    "dependencies": {
+        "@chakra-ui/icons": "^1.1.1",
+        "@chakra-ui/react": "^1.8.1",
+        "@emotion/react": "^11",
+        "@emotion/styled": "^11",
+        "framer-motion": "^5",
+        "next": "^12.0.9",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.3.1",
+        "swiper": "^8.0.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "eslint": "8.7.0",
+        "eslint-config-next": "12.0.9",
+        "postcss": "^8.4.5",
+        "postcss-cli": "^9.1.0",
+        "tailwindcss": "^3.0.17"
+    },
+    "version": "1.0.0",
+    "description": "Next JS Application using ChakraUI, tailwindCSS, FramerMotion and more",
+    "main": "index.js",
+    "author": "Mehul Tanwar",
+    "license": "MIT"
 }

@@ -1,16 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --srPurple: #450d58;
+  --srDeBlue: #090d6c;
+  --srSkBlue: #007ee9;
+  --srLiBlue: ##66b8eb;
+  --prGreen: #23922e;
+  --srNeoGreen: #00f130;
+  --srOcrYellow: #e1b827;
+  --srEnaYellow: #ecb543;
+  --srOrange: #d95f02;
+  --srRed: #9d002d;
+  --white-text: #e0e0e0;
+  --black-text: #272727;
+  --black-bg: #111111;
+  --white-bg: #fafafa;
+  --body-clr: var(--white-bg);
+  --txt-clr: var(--black-text);
+  --prgr1: var(--srSkBlue);
+  --prgr2: var(--srLiBlue);
+  --srgr1: var(--prGreen);
+  --srgr2: var(--srLiBlue);
+  --trgr1: var(--srPurple);
+  --trgr2: var(--srSkBlue);
+  --qrgr1: var(--srDeBlue);
+  --qrgr2: var(--prGreen);
+  --crgr1: var(--srDeBlue);
+  --crgr2: var(--srPurple);
+  --hrgr1: var(--srOcrYellow);
+  --hrgr2: var(--srOrange);
+  --prgr: linear-gradient(to top right, var(--prgr1), var(--prgr2));
+  --srgr: linear-gradient(to top right, var(--srgr1), var(--srgr2));
+  --trgr: linear-gradient(to top right, var(--trgr1), var(--trgr2));
+  --qrgr: linear-gradient(to top right, var(--qrgr1), var(--qrgr2));
+  --crgr: linear-gradient(to top right, var(--crgr1), var(--crgr2));
+  --hrgr: linear-gradient(to top right, var(--hrgr1), var(--hrgr2));
+  --zrgr: linear-gradient(to top right, var(--hrgr1), var(--hrgr2));
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+body::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top right, #23922e8a, #66b8eb8a);
+  border-radius: 2.35px;
+  border-radius: 2.5rem;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Lato, Montserrat, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+/* Links */
 
 a {
-  color: inherit;
-  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  color: #66b8eb;
+}
+a:active {
+  color: #007ee9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:visited {
+  color: #5b0a82;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  /* Add list-style-type: none / disc/ etc ; to style the bullet point.  */
+}
+
+/* Bg Animate */
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }

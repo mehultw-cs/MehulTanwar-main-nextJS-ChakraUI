@@ -1,0 +1,212 @@
+// whiteMost: #fafafa
+ whiteMost: {
+          100: "#fefefe",
+          200: "#fdfdfd",
+          300: "#fcfcfc",
+          400: "#fbfbfb",
+          500: "#fafafa",
+          600: "#c8c8c8",
+          700: "#969696",
+          800: "#646464",
+          900: "#323232"
+},
+
+white-most: {
+    
+    whiteMost100: "#fefefe",
+    whiteMost200: "#fdfdfd",
+    whiteMost300: "#fcfcfc",
+    whiteMost400: "#fbfbfb",
+    whiteMost500: "#fafafa",
+    whiteMost600: "#c8c8c8",
+    whiteMost700: "#969696",
+    whiteMost800: "#646464",
+    whiteMost900: "#323232",
+},
+
+
+
+off-white: {
+    // Off White: #e0e0e0
+    offWhite100: "#f9f9f9",
+    offWhite200: "#f3f3f3",
+    offWhite300: "#ececec",
+    offWhite400: "#e6e6e6",
+    offWhite500: "#e0e0e0",
+    offWhite600: "#b3b3b3",
+    offWhite700: "#868686",
+    offWhite800: "#5a5a5a",
+    offWhite900: "#2d2d2d",
+},
+
+off-whiter: {
+    // Off Whiter : #d1d1d1
+    offWhiter100: "#f6f6f6",
+    offWhiter200: "#ededed",
+    offWhiter300: "#e3e3e3",
+    offWhiter400: "#dadada",
+    offWhiter500: "#d1d1d1",
+    offWhiter600: "#a7a7a7",
+    offWhiter700: "#7d7d7d",
+    offWhiter800: "#545454",
+    offWhiter900: "#2a2a2a",
+},
+
+black: {
+    // Blacker: #111111
+    blacker100: "#cfcfcf",
+    blacker200: "#a0a0a0",
+    blacker300: "#707070",
+    blacker400: "#414141",
+    blacker500: "#111111",
+    blacker600: "#0e0e0e",
+    blacker700: "#0a0a0a",
+    blacker800: "#070707",
+    blacker900: "#030303",
+},
+
+off-black: {
+    // off Black: #272727
+    offBlack100: "#d4d4d4",
+    offBlack200: "#a9a9a9",
+    offBlack300: "#7d7d7d",
+    offBlack400: "#525252",
+    offBlack500: "#272727",
+    offBlack600: "#1f1f1f",
+    offBlack700: "#171717",
+    offBlack800: "#101010",
+    offBlack900: "#080808",
+},
+
+
+
+srPurple: {
+    // Secondary Purple: #450d58
+          srPurple100: "#dacfde",
+          srPurple200: "#b59ebc",
+          srPurple300: "#8f6e9b",
+          srPurple400: "#6a3d79",
+          srPurple500: "#450d58",
+          srPurple600: "#370a46",
+          srPurple700: "#290835",
+          srPurple800: "#1c0523",
+          srPurple900: "#0e0312",
+},
+srDeBlue: {
+    // Secondary Deep Blue: #090d6c
+          srDeBlue100: "#cecfe2",
+          srDeBlue200: "#9d9ec4",
+          srDeBlue300: "#6b6ea7",
+          srDeBlue400: "#3a3d89",
+          srDeBlue500: "#090d6c",
+          srDeBlue600: "#070a56",
+          srDeBlue700: "#050841",
+          srDeBlue800: "#04052b",
+          srDeBlue900: "#020316",
+},
+
+
+srSkBlue: {
+    // Secondary Sky Blue: #007ee9
+          srSkBlue100: "#cce5fb",
+          srSkBlue200: "#99cbf6",
+          srSkBlue300: "#66b2f2",
+          srSkBlue400: "#3398ed",
+          srSkBlue500: "#007ee9",
+          srSkBlue600: "#0065ba",
+          srSkBlue700: "#004c8c",
+          srSkBlue800: "#00325d",
+          srSkBlue900: "#00192f",
+}
+
+srLiBlue: {
+    // Secondary Light Blue: #66b8eb
+          srLiBlue100: "#e0f1fb",
+          srLiBlue200: "#c2e3f7",
+          srLiBlue300: "#a3d4f3",
+          srLiBlue400: "#85c6ef",
+          srLiBlue500: "#66b8eb",
+          srLiBlue600: "#5293bc",
+          srLiBlue700: "#3d6e8d",
+          srLiBlue800: "#294a5e",
+          srLiBlue900: "#14252f",
+},
+
+prGreen: {
+        // Secondary Red: #23922e
+          prGreen100: "#d3e9d5",
+          prGreen200: "#a7d3ab",
+          prGreen300: "#7bbe82",
+          prGreen400: "#4fa858",
+          prGreen500: "#23922e",
+          prGreen600: "#1c7525",
+          prGreen700: "#15581c",
+          prGreen800: "#0e3a12",
+          prGreen900: "#071d09",
+},
+
+srNeoGreen: {
+    // Secondary Neon Green: #00f130
+          srNeoGreen100: "#ccfcd6",
+          srNeoGreen200: "#99f9ac",
+          srNeoGreen300: "#66f783",
+          srNeoGreen400: "#33f459",
+          srNeoGreen500: "#00f130",
+          srNeoGreen600: "#00c126",
+          srNeoGreen700: "#00911d",
+          srNeoGreen800: "#006013",
+          srNeoGreen900: "#00300a",
+}
+
+srOcrYellow: {
+    // Secondary Ocre Yellow: #e1b827
+          srOcrYellow100: "#f9f1d4",
+          srOcrYellow200: "#f3e3a9",
+          srOcrYellow300: "#edd47d",
+          srOcrYellow400: "#e7c652",
+          srOcrYellow500: "#e1b827",
+          srOcrYellow600: "#b4931f",
+          srOcrYellow700: "#876e17",
+          srOcrYellow800: "#5a4a10",
+          srOcrYellow900: "#2d2508",
+},
+
+srEnaYellow: {
+    // Secondary Enactus Yellow: #ecb543
+          srEnaYellow100: "#fbf0d9",
+          srEnaYellow200: "#f7e1b4",
+          srEnaYellow300: "#f4d38e",
+          srEnaYellow400: "#f0c469",
+          srEnaYellow500: "#ecb543",
+          srEnaYellow600: "#bd9136",
+          srEnaYellow700: "#8e6d28",
+          srEnaYellow800: "#5e481b",
+          srEnaYellow900: "#2f240d",
+},
+
+srOrange: {
+    // Secondary Orange: #d95f02
+          srOrange100: "#f7dfcc",
+          srOrange200: "#f0bf9a",
+          srOrange300: "#e89f67",
+          srOrange400: "#e17f35",
+          srOrange500: "#d95f02",
+          srOrange600: "#ae4c02",
+          srOrange700: "#823901",
+          srOrange800: "#572601",
+          srOrange900: "#2b1300",
+},
+
+srRed: {  
+          // Secondary Red: #9d002d
+          srRed100: "#ebccd5",
+          srRed200: "#d899ab",
+          srRed300: "#c46681",
+          srRed400: "#b13357",
+          srRed500: "#9d002d",
+          srRed600: "#7e0024",
+          srRed700: "#5e001b",
+          srRed800: "#3f0012",
+          srRed900: "#1f0009",
+},
+
