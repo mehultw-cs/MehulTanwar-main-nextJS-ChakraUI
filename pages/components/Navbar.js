@@ -39,8 +39,6 @@ const textColor = {
   dark: '#fafafa',
 };
 
-
-
 const NavBar = () => {
   const navBgColor = useColorModeValue(navBg.light, navBg.dark);
   const astextColor = useColorModeValue(textColor.light, textColor.dark);
@@ -48,6 +46,7 @@ const NavBar = () => {
   return (
     <>
       <Flex
+        as="navBar"
         bgColor={navBgColor}
         color={astextColor}
         backdropFilter="auto"
@@ -63,7 +62,7 @@ const NavBar = () => {
         d={['none', 'none', 'none', 'flex']}
         mx="auto"
         mt="0.01rem"
-        top="1rem"      
+        top="1rem"
         z-index="30"
         overflow="hidden"
       >
@@ -77,6 +76,12 @@ const NavBar = () => {
                 bgClip="text"
                 fontSize={['2xl', '2xl', '3xl', '3xl']}
                 fontWeight="bold"
+                _hover={{
+                  bgGradient: 'radial( #225df4,#3ac6e4)',
+                  bgClip: 'text',
+
+                  fontWeight: 'bold',
+                }}
               >
                 &#60;&#123;.MT/&#125;&#62;
               </Text>
@@ -92,9 +97,8 @@ const NavBar = () => {
             <Box
               as="a"
               p={[1, 2, 4, 5]}
-              
               fontWeight="semibold"
-              _hover={{ color: 'red.500', }}
+              _hover={{ color: 'red.500' }}
               _active={{
                 color: 'red.500',
                 textDecoration: 'underline',
@@ -279,7 +283,6 @@ const NavBar = () => {
               fontSize={['2xl', '2xl', '3xl', '3xl']}
               fontWeight="bold"
             >
-              
               &#60;&#123;.MT/&#125;&#62;
             </Text>
           </Center>
@@ -356,7 +359,6 @@ const NavBar = () => {
                   fontSize={['2xl', '2xl', '3xl', '3xl']}
                   fontWeight="bold"
                 >
-                  
                   &#60;&#123;.MT/&#125;&#62;
                 </Text>
               </NextLink>
