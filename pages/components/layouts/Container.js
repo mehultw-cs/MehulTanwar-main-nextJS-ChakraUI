@@ -7,11 +7,22 @@ import styled from '@emotion/styled'
 
 import ColorModeSwitch from '../ColorModeSwitch'
 
-const Container = ({  children  }) => {
-return(
-<>
-    Container
-</>)
+const Container = ({  children, props  }) => {
+return (
+  <>
+    <Flex
+      as="Container"
+      direction="column"
+      alignItems="center"
+      m="0 auto"
+      maxW={['auto', 'auto', 'auto', '75rem']}
+      {...props}
+      >
+      
+      {children}
+    </Flex>
+  </>
+);
 }
 
 export default Container;

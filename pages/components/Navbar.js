@@ -60,7 +60,7 @@ const NavBar = () => {
         justifyContent="center"
         position="fixed"
         d={['none', 'none', 'none', 'flex']}
-        mx="auto"
+        mx="1rem"
         mt="0.01rem"
         top="1rem"
         z-index="30"
@@ -198,7 +198,7 @@ const NavBar = () => {
               borderRadius="3xl"
               ml="0.75rem"
             >
-              <Icon as={MdEmail} _hover={{ color: 'linkedin.500' }}></Icon>
+              <Icon as={MdEmail} _hover={{ color: 'whatsapp.500' }}></Icon>
             </Center>
           </NextLink>
           <NextLink href="https://linkedin.com/mehultwdi">
@@ -264,9 +264,10 @@ const NavBar = () => {
           backdropBlur="4.65px"
           borderRadius="4rem"
           top="89vh"
+          
           d={['flex', 'flex', 'flex', 'none']}
           z-index="10"
-          left={'44vw'}
+          left={'40vw'}
           position="fixed"
           justifyContent="center"
           alignItems="center"
@@ -282,6 +283,12 @@ const NavBar = () => {
               bgClip="text"
               fontSize={['2xl', '2xl', '3xl', '3xl']}
               fontWeight="bold"
+              _hover={{
+                bgGradient: 'radial( #225df4,#3ac6e4)',
+                bgClip: 'text',
+
+                fontWeight: 'bold',
+              }}
             >
               &#60;&#123;.MT/&#125;&#62;
             </Text>
@@ -358,6 +365,12 @@ const NavBar = () => {
                   bgClip="text"
                   fontSize={['2xl', '2xl', '3xl', '3xl']}
                   fontWeight="bold"
+                  _hover={{
+                    bgGradient: 'radial( #225df4,#3ac6e4)',
+                    bgClip: 'text',
+
+                    fontWeight: 'bold',
+                  }}
                 >
                   &#60;&#123;.MT/&#125;&#62;
                 </Text>
@@ -474,7 +487,7 @@ const NavBar = () => {
                 borderRadius="3xl"
                 ml="0.75rem"
               >
-                <Icon as={MdEmail} _hover={{ color: 'linkedin.500' }}></Icon>
+                <Icon as={MdEmail} _hover={{ color: 'whatsapp.500' }}></Icon>
               </Center>
             </NextLink>
             <NextLink href="https://linkedin.com/mehultwdi">
