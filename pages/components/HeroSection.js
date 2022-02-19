@@ -1,6 +1,31 @@
-import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Center,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 import { WavesLayeredDivider, TriangleMidDivider } from './layouts/SVG';
+import Typical from 'react-typical';
+import { Link as ScrollLink } from 'react-scroll';
+import NextLink from 'next/link';
+import { motion } from 'framer-motion';
+
+// framer motion hooks
+
+//to check if div is in view
+
+import { useInView } from 'react-intersection-observer';
+
+//use animation from framer motion, trigger animation given view status
+
+import { useAnimation } from 'framer-motion';
+
+//useEffect from react, to use animate effect on trigger of in-view
+
+import { useEffect } from 'react';
 
 const glassColor = {
   light: '#cfcfcf57',
@@ -8,8 +33,8 @@ const glassColor = {
 };
 
 const nextDividerColor = {
-  light: '#f4f4f4',
-  dark: '#202020',
+  light: '#fafafa',
+  dark: '#171717',
 };
 
 const HeroSection = () => {
@@ -22,11 +47,26 @@ const HeroSection = () => {
     nextDividerColor.light,
     nextDividerColor.dark
   );
+
+  // animation motion Box
+  const MotionBox = motion(Box);
+
+  //animation
+
+  // useInView
+
+  const { refHeroContainer, inViewHeroContainer } = useInView();
+  const { refHeroButton, inViewHeroButton } = useInView();
+
+  //useEffect
+
+  // motionbox
+
   return (
     <>
       <Box
         as="heroSection"
-        width="100%"
+        width="100vw"
         py="4rem"
         bgImage="/hero-min.jpeg"
         d="flex"
@@ -36,58 +76,139 @@ const HeroSection = () => {
         justify={['center']}
       >
         <Box m="0 auto" maxW={['auto', 'auto', 'auto', '75rem']}>
-          <Box
-            as="heroContainer"
-            display="flex"
-            flexDirection="column"
-            height={['33vh', '35vh', '30vh', '30vh', '30vh']}
-            width={['95vw', '53vw', '53vw', '39vw', '42vw']}
-            py={['2.5rem', '2.5rem']}
-            px={['1.5rem', '2rem', '2rem', '2.5rem']}
-            mt={['22rem', '20rem', '18rem', '18rem']}
-            mb={['8rem', '10rem', '10rem', '18rem']}
-            ml={['0.25rem', '14rem', '19rem', '29rem', '35rem']}
-            bgColor={pageGlassColor}
-            styles={{ 'backdrop-Filter': 'blur(1.5rem)' }}
-            borderRadius="3rem"
-            backdropFilter="auto"
-            backdropBlur="4.5px"
-            boxShadow="xl"
+          <motion.div
+            ref={refHeroContainer}
+            initial={{ opacity: 0, y: '-2vh', x: '-2vw' }}
+            animate={{ opacity: 1, y: '0', x: '0' }}
+            transition={{
+              duration: 0.5,
+              delay: 0.5,
+              type: 'spring',
+              bounce: '0.3',
+            }}
           >
-            <Heading as="h2" fontSize="3xl" mt=".75rem">
-              Hi, I&apos;m{' '}
-              <Heading
-                as="h2"
-                fontSize="3xl"
-                display="inline"
-                bgGradient="linear(to-tr,#3ac6e4, #225df4)"
-                bgSize="400%"
-                bgClip="text"
-                style={{ animation: 'bg-animation 10s infinite alternate;' }}
-              >
-                Mehul Tanwar
+            <Box
+              as="heroContainer"
+              display="flex"
+              flexDirection="column"
+              height={['50vh', '42vh', '38vh', '44vh', '40vh']}
+              width={['95vw', '64vw', '53vw', '39vw']}
+              py={['2.5rem', '2.5rem']}
+              px={['1.5rem', '2rem', '2rem', '2.5rem']}
+              mt={['22rem', '18rem', '18rem', '18rem']}
+              mb={['8rem', '10rem', '10rem', '18rem']}
+              ml={['0.25rem', '14rem', '19rem', '29rem', '35rem']}
+              bgColor={pageGlassColor}
+              styles={{ 'backdrop-Filter': 'blur(1.5rem)' }}
+              borderRadius="3rem"
+              backdropFilter="auto"
+              backdropBlur="4.5px"
+              boxShadow="xl"
+            >
+              <Heading as="h2" fontSize="3xl" mt=".75rem">
+                Hi, I&apos;m{' '}
+                <Heading
+                  as="h2"
+                  fontSize="3xl"
+                  display="inline"
+                  bgGradient="linear(to-tr,#3ac6e4, #225df4)"
+                  bgSize="400%"
+                  bgClip="text"
+                  style={{ animation: 'bg-animation 10s infinite alternate;' }}
+                >
+                  Mehul Tanwar
+                </Heading>
+                ,
               </Heading>
-              ,
-            </Heading>
-            <Heading as="h5" fontSize="xl" my="2rem">
-              Welcome to my Website
-            </Heading>
-            <Text>
-              This is a personal portfolio website which gives you a glimpse of
-              me. I created this project for potential employers and showcase my
-              passion for problem solving and photography.
-            </Text>
-            <Text> &nbsp;</Text>
-            <Text>This website is being developed while deployed..</Text>
-          </Box>
+              <p className="typical">
+                I'm a &nbsp;
+                <Typical
+                  loop={Infinity}
+                  wrapper="b"
+                  steps={[
+                    'Software Engineer 👨🏽‍💻',
+                    1500,
+                    'Web Application Developer 💻',
+                    1750,
+                    'Computer Scientist 🖥',
+                    1650,
+                    'Front-end Architect 🏛',
+                    1500,
+                    'UI / UX Designer 🎨',
+                    1750,
+                    'Interested Photographer 📷',
+                    1500,
+                    'Keen Stargazer 🌌',
+                    1600,
+                    'PC Gamer 🎮',
+                    1500,
+                  ]}
+                ></Typical>
+              </p>
+              <Text>
+                This is a personal portfolio website which gives you a glimpse
+                of me. I created this project for potential employers, future
+                colleagues and friends. This is mostly verbose and 100%
+                authentic.
+              </Text>
+              <Text> &nbsp;</Text>
+              <Text>This website is being developed while deployed..</Text>
+
+              <Center>
+                <Box
+                  p={['1.75rem', '1.74rem', '2rem', '2rem']}
+                  pt={['', '', '', '2.5rem']}
+                >
+                  <motion.div
+                    initial={{ opacity: 0, y: '0', x: '-2vw' }}
+                    animate={{ opacity: 1, y: '0', x: '0' }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.9,
+                      type: 'spring',
+                      bounce: '0.3',
+                    }}
+                  >
+                    <NextLink href="#about" passHref>
+                      <MotionBox
+                        as="a"
+                        px={['1.75rem', '2.25rem', '2.5rem', '2.75rem']}
+                        py={['0.8rem', '0.9rem', '0.8rem', '1rem']}
+                        borderRadius={['4rem', '4rem', '4rem', '4rem']}
+                        fontWeight="bold"
+                        fontSize="lg"
+                        bgGradient="linear(to-tr,#23922e,#13BB35)"
+                        boxShadow="lg"
+                        mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
+                        transition="all 0.25s ease-in"
+                        font="Montserrat"
+                        _active={{
+                          color: 'white',
+                          textDecoration: 'underline',
+                          fontWeight: 'bold',
+                        }}
+                        _visited={{
+                          color: 'white',
+                        }}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        Learn More
+                      </MotionBox>
+                    </NextLink>
+                  </motion.div>
+                </Box>
+              </Center>
+            </Box>
+          </motion.div>
         </Box>
       </Box>
 
       {/* Bottom Divider */}
 
-      <Box w="150%" height="50%" mt="-25vh">
+      <Box height="50%" mt="-25vh">
         <svg
-          width="100%"
+          width="200%"
           height="30vh"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 35.28 2.17"

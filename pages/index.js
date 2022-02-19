@@ -12,9 +12,13 @@ import Navbar from './components/Navbar';
 import Container from './components/layouts/Container';
 
 // Sections
-import NavigatingWebsiteSection from './components/NavigatingWebsiteSection'
-import HeroSection from './components/HeroSection'
-import AboutMeSection from './components/AboutMeSection'
+import NavigatingWebsiteSection from './components/NavigatingWebsiteSection';
+import HeroSection from './components/HeroSection';
+import AboutMeSection from './components/AboutMeSection';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Work from './components/Work';
+import Stack from './components/Stack';
 // import { heroImage } from '../public/IMG_0803-min.jpeg';
 
 const Headin = () => {
@@ -23,6 +27,13 @@ const Headin = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mehul Tanwar - Homepage</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#111111" />
       </Head>
     </>
   );
@@ -54,14 +65,17 @@ const Page = () => {
         mx="auto"
         px="auto"
         justifyContent="center"
+        overflow="hidden"
       >
         <Headin />
 
         <HeroSection />
-        <NavigatingWebsiteSection />
+        {/* <NavigatingWebsiteSection /> */}
         <AboutMeSection />
-          
-        
+        <Education />
+        <Skills />
+        <Work />
+        <Stack />
         <Navbar />
       </Box>
     </>

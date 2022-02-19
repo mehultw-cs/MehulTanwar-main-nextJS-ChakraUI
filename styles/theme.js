@@ -206,8 +206,8 @@ const colors = {
 };
 
 const config = {
-  initialColorMode: 'light',
-  useSystemColorMode: 'true',
+  initialColorMode: 'dark',
+  useSystemColorMode: 'false',
   cssVarPrefix: 'mt',
 };
 const overrides = {
