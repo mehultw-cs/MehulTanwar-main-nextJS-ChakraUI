@@ -28,3 +28,5 @@ const Button1 = (props) => {
     {...props}
   ></Box>;
 };
+
+export default Button1;

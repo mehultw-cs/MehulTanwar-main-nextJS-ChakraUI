@@ -65,7 +65,8 @@ const HeroSection = () => {
   return (
     <>
       <Box
-        as="heroSection"
+        as="herosection"
+        id="herosection"
         width="100vw"
         py="4rem"
         bgImage="/hero-min.jpeg"
@@ -88,7 +89,7 @@ const HeroSection = () => {
             }}
           >
             <Box
-              as="heroContainer"
+              as="herocontainer"
               display="flex"
               flexDirection="column"
               height={['50vh', '42vh', '38vh', '44vh', '40vh']}
@@ -105,23 +106,14 @@ const HeroSection = () => {
               backdropBlur="4.5px"
               boxShadow="xl"
             >
-              <Heading as="h2" fontSize="3xl" mt=".75rem">
-                Hi, I&apos;m{' '}
-                <Heading
-                  as="h2"
-                  fontSize="3xl"
-                  display="inline"
-                  bgGradient="linear(to-tr,#3ac6e4, #225df4)"
-                  bgSize="400%"
-                  bgClip="text"
-                  style={{ animation: 'bg-animation 10s infinite alternate;' }}
-                >
+              <Heading fontSize="3xl" mt=".75rem">
+                Hi, I&apos;m&nbsp;
+                <Text fontSize="3xl" display="inline" className="trgrBgTxt">
                   Mehul Tanwar
-                </Heading>
-                ,
+                </Text>
               </Heading>
-              <p className="typical">
-                I'm a &nbsp;
+              <Box className="typical">
+                I&apos;m a &nbsp;
                 <Typical
                   loop={Infinity}
                   wrapper="b"
@@ -144,7 +136,7 @@ const HeroSection = () => {
                     1500,
                   ]}
                 ></Typical>
-              </p>
+              </Box>
               <Text>
                 This is a personal portfolio website which gives you a glimpse
                 of me. I created this project for potential employers, future

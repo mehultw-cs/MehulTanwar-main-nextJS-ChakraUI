@@ -8,17 +8,17 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import Head from 'next/head';
-import Navbar from './components/Navbar';
-import Container from './components/layouts/Container';
+import Navbar from '../components/Navbar';
+import Container from '../components/layouts/Container';
 
 // Sections
-import NavigatingWebsiteSection from './components/NavigatingWebsiteSection';
-import HeroSection from './components/HeroSection';
-import AboutMeSection from './components/AboutMeSection';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Work from './components/Work';
-import Stack from './components/Stack';
+import NavigatingWebsiteSection from '../components/NavigatingWebsiteSection';
+import HeroSection from '../components/HeroSection';
+import AboutMeSection from '../components/AboutMeSection';
+import Education from '../components/Education';
+import Skills from '../components/Skills';
+import Work from '../components/Work';
+import Stack from '../components/Stack';
 // import { heroImage } from '../public/IMG_0803-min.jpeg';
 
 const Headin = () => {

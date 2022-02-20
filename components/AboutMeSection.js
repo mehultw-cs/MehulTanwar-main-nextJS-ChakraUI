@@ -42,7 +42,6 @@ const textColor = {
   dark: '#fafafa',
 };
 
-
 // animation motion Box
 const MotionBox = motion(Box);
 
@@ -133,10 +132,17 @@ const AboutMeSection = () => {
 
   return (
     <>
-      {' '}
-      <Box pt="2rem" id="about">
-        <Box width="100vw" mb={['25rem', '25rem', '20rem', '15rem']}>
-          <Box as="SvgBox">
+      <Box
+        pt="2rem"
+        id="about"
+        bgImage="/grAbout.png"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgSize={['300%', '270%', '190%', '110%']}
+        pb="1rem"
+      >
+        <Box width="100vw" mb={['25rem', '25rem', '20rem', '1rem']}>
+          <Box as="svgbox">
             {/* <TriangleMidDivider
             fill={divPrevColor}
             width="100vw"
@@ -181,6 +187,7 @@ const AboutMeSection = () => {
                     // ml={['-5rem']}
                     my={['1.5rem']}
                     boxShadow="lg"
+                    alt="Mehul sitting in sun"
                   ></Image>
                   <Box
                     mt="-1.8rem"
@@ -192,7 +199,7 @@ const AboutMeSection = () => {
                     </Heading>
                     <Text d="block" fontSize="lg">
                       I am a recently graduated Computer Scientist from Saint
-                      Mary's University in Halifax, Canada.
+                      Mary&apos;s University in Halifax, Canada.
                     </Text>
                     <Text d="block" fontSize="lg">
                       I&apos;m a technophile and an avid photographer.
@@ -240,9 +247,9 @@ const AboutMeSection = () => {
             </Container>
           </motion.div>
           {/* Wave Circ Bg */}
-          <Center
+          {/* <Center
             mt={['-80rem', '-75rem', '-60rem', '-50rem']}
-            as="SVGBox"
+            as="svgbox"
             overflow={'hidden'}
           >
             <svg
@@ -731,11 +738,11 @@ const AboutMeSection = () => {
                 </linearGradient>
               </defs>
             </svg>
-          </Center>
+          </Center> */}
 
           {/* 3D Shape Bg */}
-          <Center
-            as="SVGBox"
+          {/* <Center
+            as="svgbox"
             mt={['3rem', '-1rem', '-1rem', '-1rem']}
             ml={['-20rem', '-30rem', '-30rem', '-30rem']}
             overflow={'hidden'}
@@ -983,13 +990,13 @@ const AboutMeSection = () => {
                 </linearGradient>
               </defs>
             </svg>
-          </Center>
+          </Center> */}
 
           {/* Loop Bg  */}
-          <Center
+          {/* <Center
             mt="-25rem"
             mr={['-30rem', '-30rem', '-30rem', '-40rem']}
-            as="SVGBox"
+            as="svgbox"
             overflow={'hidden'}
           >
             <svg
@@ -1371,7 +1378,7 @@ const AboutMeSection = () => {
                 </linearGradient>
               </defs>
             </svg>
-          </Center>
+          </Center> */}
         </Box>
       </Box>
     </>

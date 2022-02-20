@@ -149,22 +149,23 @@ const Education = () => {
               align="center"
             >
               <motion.div animate={growAnimation}>
-              <Heading
-                ref={headingRef}
-                justify="center"
-                align="center"
-                pb={['2.2rem']}
-                m={['2rem']}
-                className = "srgrBgTxt"
-              >
-                Education
-              </Heading></motion.div>
+                <Heading
+                  ref={headingRef}
+                  justify="center"
+                  align="center"
+                  pb={['2.2rem']}
+                  m={['2rem']}
+                  className="srgrBgTxt"
+                >
+                  Education
+                </Heading>
+              </motion.div>
               <Text>
                 I recently graduated with a B.Sc. Computer Science, with
-                Co-Operative Education (3 Work terms) from Saint Mary's
+                Co-Operative Education (3 Work terms) from Saint Mary&apos;s
                 University (SMU), Canada. I love Canada and what it has to
                 offer. My education over the past years had led me to questions
-                and answers that I didn't even know existed. I started my
+                and answers that I didn&apos;t even know existed. I started my
                 University journey with Astrophysics in mind since that was the
                 reason for me to persue higher education, SMU was a great fit
                 since it offered exceptional Astrophysics faculty and tools
@@ -172,7 +173,7 @@ const Education = () => {
                 Department.
               </Text>
               <Text>
-                My interest in Computer Science originated in 11<sup>th</sup>{' '}
+                My interest in Computer Science originated in 11<sup>th</sup>
                 grade in an introductory to CS class. I instantly fell in love
                 with CS and knew it is a great tool to make this world a better
                 place. Since then I knew I would work with CS in some form.
@@ -194,7 +195,7 @@ const Education = () => {
                 My Education ultimately led me to a breadth of varied courses
                 all the way from History, Politics, Marketing and
                 Entrepreneurship to Neuroscience, Artificial Intelligence, Data
-                Mining and finding Extraterrestrial planets on distant stars.{' '}
+                Mining and finding Extraterrestrial planets on distant stars.
               </Text>
               <Text>
                 I also happened to get certified to be a Teacher of English as a

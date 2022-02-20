@@ -4,7 +4,7 @@ import {
     ColorModeProvider,
     useColorMode,
 } from '@chakra-ui/react';
-import { mtTheme1 } from '../styles/theme';
+import { mtTheme } from '../styles/theme';
 import {AppProps} from 'next/app';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,7 +15,7 @@ import 'swiper/css';
 
 function mtWeb({ Component, pageProps }) {
     return (
-        <ChakraProvider resetCSS theme={mtTheme1}>
+        <ChakraProvider resetCSS theme={mtTheme}>
             {/* Persistant Color mode using colorModeProvider and to check the color mode value we use useColorMode */}
             <ColorModeProvider
                 options={{

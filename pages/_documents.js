@@ -1,7 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 // import GoogleFonts from 'next-google-fonts/';
 import { ColorModeScript } from '@chakra-ui/react';
-import { mtTheme1 } from '../styles/theme';
+import { mtTheme } from '../styles/theme';
 
 export default class MyDocument extends NextDocument {
   render() {
@@ -11,7 +11,7 @@ export default class MyDocument extends NextDocument {
         <Head />
         <body>
           <ColorModeScript
-            initialColorMode={mtTheme1.config.initialColorMode}
+            initialColorMode={mtTheme.config.initialColorMode}
           />
           <Main />
           <NextScript />

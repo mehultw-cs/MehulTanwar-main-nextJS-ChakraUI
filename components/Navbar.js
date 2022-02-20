@@ -22,7 +22,7 @@ import {
 import NextLink from 'next/link';
 import ColorSwitch from './ColorModeSwitch';
 import styled from '@emotion/styled';
-import mtTheme1 from '../../styles/theme';
+import mtTheme1 from '../styles/theme';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { MdEmail, MdClose } from 'react-icons/md';
 import { RiMenu5Fill } from 'react-icons/ri';
@@ -97,7 +97,7 @@ const NavBar = () => {
     <>
       {/* Desktop Nav bar  */}
 
-      <Box as="navWrapper" ref={deskNavRef}>
+      <Box id="navwrapper" ref={deskNavRef}>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -116,7 +116,7 @@ const NavBar = () => {
           }}
         >
           <Flex
-            as="navBar"
+            as="navbar"
             bgColor={navBgColor}
             color={astextColor}
             backdropFilter="auto"

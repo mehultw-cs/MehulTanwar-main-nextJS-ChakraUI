@@ -11,7 +11,7 @@ const Container = ({  children, props  }) => {
 return (
   <>
     <Flex
-      as="Container"
+      as="container"
       direction="column"
       alignItems="center"
       m="0 auto"

@@ -73,36 +73,37 @@ const Stack = () => {
 
   return (
     <>
-    <motion.div ref={stackContainerRef} animate={fullSlideNegXAnimation}>
-      <Center>
-        <Heading as="h4" fontSize="xl" pb="2rem">
-          Tech Stack
-        </Heading>
-      
-      </Center>
-      <Center>
-        <Box
-          as="techStackbox"
-          w="98vw"
-          height={['10vh', '10vh', '10vh', '10vh']}
-          p={['0.75rem', '', '', '0.75rem']}
-          py={['', '', '', '0.5rem']}
-          mb={['7vh', '', '', '0rem']}
-          style={{ 'overflow-x': 'scroll', 'overflow-y': 'hidden' }}
-          borderRadius="lg"
-        >
-          <HStack as="techStack" gap="1.75rem" justify="space-between">
-            {stackItems.map((stackItem, i) => (
-              <Image
-                src={stackItem.image}
-                maxWidth="5rem"
-                key={i}
-                preserveAspectRatio="true"
-              ></Image>
-            ))}
-          </HStack>
-        </Box>
-      </Center>
+      <motion.div ref={stackContainerRef} animate={fullSlideNegXAnimation}>
+        <Center>
+          <Heading as="h4" fontSize="xl" pb="2rem">
+            Tech Stack
+          </Heading>
+        </Center>
+        <Center>
+          <Box
+            as="techstackbox"
+            w="98vw"
+            height={['10vh', '10vh', '10vh', '10vh']}
+            p={['0.75rem', '', '', '0.75rem']}
+            py={['', '', '', '0.5rem']}
+            mb={['7vh', '', '', '0rem']}
+            
+            borderRadius="lg"
+            className="techstackbox"
+          >
+            <HStack as="techstack" gap="1.75rem" justify="space-between">
+              {stackItems.map((stackItem, i) => (
+                <Image
+                  src={stackItem.image}
+                  maxWidth="5rem"
+                  key={i}
+                  preserveAspectRatio="true"
+                  alt={"Name of the tool used in stack, which is: " + stackItem.label}
+                ></Image>
+              ))}
+            </HStack>
+          </Box>
+        </Center>
       </motion.div>
     </>
   );

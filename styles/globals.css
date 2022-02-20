@@ -62,18 +62,20 @@
   border-radius: 2.35px;
   border-radius: 2.5rem;
 }
-techstackbox::-webkit-scrollbar {
-  width: 0.75rem;
-}
-techstackbox::-webkit-scrollbar-track {
-  background: #171717;
+.techstackbox {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-techstackbox::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top right, #23922e8a, #66b8eb8a);
-  border-radius: 2.35px;
-  border-radius: 2.5rem;
+.workarea {
+overflow-x: scroll;
 }
+
+.skillsarea {
+overflow-x: scroll;
+}
+
+
 
 html,
 body {
@@ -173,7 +175,7 @@ ul {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 300%;
-  animation: bg-animation 10s infinite alternate;
+  animation: bg-animation 7s infinite alternate;
 }
 
 .prgrBgTxt:hover {
@@ -191,7 +193,7 @@ ul {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 300%;
-  animation: bg-animation 10s infinite alternate;
+  animation: bg-animation 7s infinite alternate;
 }
 
 .prgrBgTxt:active {
@@ -209,7 +211,7 @@ ul {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 300%;
-  animation: bg-animation 10s infinite alternate;
+  animation: bg-animation 7s infinite alternate;
   text-decoration: underline;
   font-weight: 800;
 }

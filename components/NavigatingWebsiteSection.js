@@ -52,7 +52,7 @@ const NavigatingWebsiteSection = () => {
 
   return (
     <>
-      <Box as="navigationSection" width="100vw" height="55vh">
+      <Box as="navigationsection" width="100vw" height="55vh">
         <Flex bgColor={sectionBgColor} py="10rem">
           <Container>
             <Heading pb="5rem"> Navigating the website</Heading>
@@ -61,7 +61,7 @@ const NavigatingWebsiteSection = () => {
             </Heading>
 
             <Flex
-              as="flagBox_Desktop"
+              id="flagbox_desktop"
               flexDirection={['column', 'column', 'row', 'row']}
               display={['none', 'none', 'flex', 'flex']}
               gap="1.75rem"

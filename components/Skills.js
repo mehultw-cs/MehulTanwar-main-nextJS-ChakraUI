@@ -180,13 +180,14 @@ const Skills = () => {
                 justify="space-between"
                 align="center"
                 w="98vw"
-                sx={{ 'overflow-x': 'scroll' }}
+                
                 p="2rem"
                 mb="1.5rem"
+                className="skillsarea"
               >
                 {skillsData.map((skillsData, i) => (
                   <Box
-                    as="tile"
+                    id="tile"
                     ref={skillsCardRef}
                     position="relative"
                     width={['12rem', '', '15.5rem', '18rem']}
@@ -202,6 +203,7 @@ const Skills = () => {
                     backdropBlur={'4.5px'}
                     boxShadow="lg"
                     bgColor={sectionGlassColor}
+                    key={i}
                   >
                     <Box justify="center" align="center">
                       <Center>
@@ -211,6 +213,7 @@ const Skills = () => {
                           key={i}
                           preserveAspectRatio="true"
                           m="1.25rem"
+                          alt={skillsData.label}
                         ></Image>
                       </Center>
                       <Center>

@@ -185,7 +185,7 @@ const Work = () => {
             <Grid
               ref={workAreaRef}
               width="98vw"
-              sx={{ 'overflow-x': 'scroll' }}
+              
               p="2rem"
               mb="1.5rem"
               templateColumns={[
@@ -197,6 +197,7 @@ const Work = () => {
               justify="space-between"
               align="center"
               gap="4rem"
+              className="workarea"
             >
               {workData.map((workData, i) => (
                 <GridItem
@@ -216,6 +217,7 @@ const Work = () => {
                   mt="4rem"
                   maxW={['', '', '', '100%']}
                   maxH={['', '', '', '100%']}
+                  key={i}
                 >
                   <Box>
                     <Center>

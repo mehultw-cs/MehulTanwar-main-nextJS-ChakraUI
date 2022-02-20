@@ -235,6 +235,6 @@ const overrides = {
   config,
 };
 
-const mtTheme1 = extendTheme(overrides);
+const mtTheme = extendTheme(overrides);
 
-export default mtTheme1;
+export default mtTheme;
