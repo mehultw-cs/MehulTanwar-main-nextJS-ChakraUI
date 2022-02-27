@@ -68,14 +68,12 @@
 }
 
 .workarea {
-overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 .skillsarea {
-overflow-x: scroll;
+  overflow-x: scroll;
 }
-
-
 
 html,
 body {
@@ -249,7 +247,7 @@ ul {
 }
 
 .srgrBgTxt:hover {
-   --srgr: -moz-linear-gradient(
+  --srgr: -moz-linear-gradient(
     45deg,
     var(--srRed),
     var(--srOrange),
@@ -275,11 +273,10 @@ ul {
   color: transparent;
   background-size: 300%;
   animation: bg-animation 7s infinite alternate;
-
 }
 
 .srgrBgTxt:active {
-   --srgr: -moz-linear-gradient(
+  --srgr: -moz-linear-gradient(
     45deg,
     var(--srRed),
     var(--srOrange),
@@ -307,7 +304,6 @@ ul {
   animation: bg-animation 7s infinite alternate;
   text-decoration: underline;
   font-weight: 900;
-  
 }
 
 .trgrBgTxt {
@@ -399,7 +395,6 @@ ul {
   font-weight: 900;
 }
 
-
 .crgrBgTxt {
   /* font-size:5rem; */
   /* font-weight: bold; */
@@ -408,28 +403,25 @@ ul {
     45deg,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: -webkit-linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   background: var(--crgr);
   -webkit-background-clip: text;
@@ -446,28 +438,25 @@ ul {
     45deg,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: -webkit-linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   background: var(--crgr);
   -webkit-background-clip: text;
@@ -484,28 +473,25 @@ ul {
     45deg,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: -webkit-linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   --crgr: linear-gradient(
     to top right,
     #50e29c,
     #50e29c,
-    #389Bd2,
-    
-    #7F08AB,
-    #7F08AB
+    #389bd2,
+    #7f08ab,
+    #7f08ab
   );
   background: var(--crgr);
   -webkit-background-clip: text;

@@ -216,7 +216,7 @@ const Education = () => {
               </Link>
             </Center> */}
 
-              <NextLink href="http://smu.ca" >
+              <NextLink href="http://smu.ca">
                 <Image
                   pt="1.5rem"
                   src="/smu_logo.png"
@@ -225,10 +225,10 @@ const Education = () => {
                   boxShadow="xl"
                   backdropFilter="auto"
                   backdropBlur="30px"
-                  px={[".25rem","2.5rem","2.5rem","2.5rem"]}
+                  px={['.25rem', '2.5rem', '2.5rem', '2.5rem']}
                   py="0.75rem"
-                  mt={["1rem","1.5rem","1.5rem","1.5rem"]}
-                  
+                  mt={['1rem', '1.5rem', '1.5rem', '1.5rem']}
+                  alt="Saint Mary's University old clickable logo"
                 ></Image>
               </NextLink>
             </Box>

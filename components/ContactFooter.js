@@ -256,6 +256,7 @@ const ContactFooter = () => {
                 <Image
                   borderRadius="2xl"
                   boxShadow="xl"
+                  alt="Mehul Tanwar headshot from Bloxo Inc. time."
                   m="1rem"
                   mx={['1.5rem', '1.5rem', '1.5rem', '1.5rem']}
                   my={['1.5rem', '1.5rem', '50%', '15%']}
