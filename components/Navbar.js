@@ -461,15 +461,15 @@ const NavBar = () => {
 
           <IconButton
             aria-label="Close Menu"
-            width="3rem"
+            width="2rem"
             icon={<MdClose />}
             variant="link"
             left="40vw"
             isRound="true"
-            bgColor="#fafafa"
+            height="2.5rem"
+            bgColor={navBg}
+            boxShadow="xl"
             mb="2rem"
-            color="#92002d"
-            bgColor=""
             onClick={() => changeDisplay('none')}
           />
 
