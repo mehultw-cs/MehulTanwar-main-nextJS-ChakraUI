@@ -20,22 +20,19 @@ import {
 
 import NextLink from 'next/link';
 
-
-
-// framer motion hooks 
+// framer motion hooks
 
 //to check if div is in view
 
-import { useInView } from 'react-intersection-observer'
+import { useInView } from 'react-intersection-observer';
 
 //use animation from framer motion, trigger animation given view status
 
-import { useAnimation, motion,  } from 'framer-motion'
+import { useAnimation, motion } from 'framer-motion';
 
 //useEffect from react, to use animate effect on trigger of in-view
 
-import { useEffect } from 'react'
-
+import { useEffect } from 'react';
 
 const Education = () => {
   const sectionGlassColor = useColorModeValue('#efefef67', '#22222287');
@@ -46,7 +43,6 @@ const Education = () => {
 
   const [containerRef, containerInView] = useInView();
   const [headingRef, headingInView] = useInView();
-
 
   //animation hook from framer motion
 
@@ -61,7 +57,7 @@ const Education = () => {
 
     if (containerInView) {
       slideXAnimation.start({
-        x: 0,        
+        x: 0,
         opacity: 1,
         transition: {
           type: 'string',
@@ -74,7 +70,7 @@ const Education = () => {
 
     if (!containerInView) {
       slideXAnimation.start({
-        x: '-2vw',        
+        x: '-2vw',
         opacity: 0,
       });
     }
@@ -99,13 +95,12 @@ const Education = () => {
 
     if (!headingInView) {
       growAnimation.start({
-        y : "0.25rem",
+        y: '0.25rem',
         opacity: 0,
         scale: 0.8,
       });
     }
   }, [headingInView]);
-
 
   return (
     <>
@@ -133,7 +128,7 @@ const Education = () => {
             ref={containerRef}
             lineHeight="2"
             pt={['8rem', '8rem', '8rem', '8rem']}
-            maxW={['90vw', '92vw', 'container.md', 'container.lg']}
+            maxW={['95vw', '95vw', 'container.md', 'container.lg']}
             mb={['2rem', '2rem', '2rem', '6rem']}
             mt={['2rem', '2rem', '2rem', '5.5rem']}
             maxHeight="98%"
@@ -144,7 +139,7 @@ const Education = () => {
               boxShadow="xl"
               backdropFilter="auto"
               backdropBlur="6px"
-              px={['2rem', '3rem', '', '4rem']}
+              px={['1.75rem', '2rem', '3rem', '4rem']}
               py={['3rem', '', '', '']}
               align="center"
             >
@@ -220,6 +215,22 @@ const Education = () => {
                 Learn More About my Life
               </Link>
             </Center> */}
+
+              <NextLink href="http://smu.ca" >
+                <Image
+                  pt="1.5rem"
+                  src="/smu_logo.png"
+                  cursor="pointer"
+                  borderRadius="2.5rem"
+                  boxShadow="xl"
+                  backdropFilter="auto"
+                  backdropBlur="30px"
+                  px={[".25rem","2.5rem","2.5rem","2.5rem"]}
+                  py="0.75rem"
+                  mt={["1rem","1.5rem","1.5rem","1.5rem"]}
+                  
+                ></Image>
+              </NextLink>
             </Box>
           </Container>
         </motion.div>

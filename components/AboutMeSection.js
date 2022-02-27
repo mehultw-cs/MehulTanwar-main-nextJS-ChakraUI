@@ -160,7 +160,7 @@ const AboutMeSection = () => {
               boxShadow="xl"
               backdropFilter="auto"
               backdropBlur="6px"
-              maxW={['90vw', '92vw', 'container.md', 'container.lg']}
+              maxW={['90vw', '85vw', 'container.md', 'container.lg']}
             >
               <Heading
                 py="2rem"
@@ -214,31 +214,36 @@ const AboutMeSection = () => {
                     </Text>
                     <motion.div animate={slideXAnimation}>
                       <MotionBox
-                        as="a"
-                        ref={butRef}
-                        color={astextColor}
-                        fontWeight="bold"
-                        fontSize="lg"
-                        bgGradient="linear(to-tr,#23922e,#13BB35)"
-                        px="1.33rem"
-                        py="1.5"
-                        mt="2rem"
-                        borderRadius="3xl"
-                        boxShadow="lg"
-                        mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
-                        transition="all 0.25s ease-in"
-                        font="Montserrat"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        _hover={{ color: 'white' }}
-                        _active={{ color: 'white' }}
-                        _visited={{ color: 'white' }}
-                        href="/MT_Grad Full_V1_Bg_re_format.pdf"
-                        alt="Mehul Tanwar Extended Résumé"
-                        target="_blank"
-                        rel="noopener noreferrer"
                       >
-                        Download my Résumé
+                        <MotionBox
+                          as="a"
+                          ref={butRef}
+                          color={astextColor}
+                          fontWeight="bold"
+                          fontSize="lg"
+                          bgGradient="linear(to-tr,#23922e,#13BB35)"
+                          px="1.33rem"
+                          py="1.5"
+                          mt="2rem"
+                          borderRadius="3xl"
+                          boxShadow="lg"
+                          mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
+                          transition="all 0.25s ease-in"
+                          font="Montserrat"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          _hover={{ color: 'white' }}
+                          _active={{ color: 'white' }}
+                          _visited={{ color: 'white' }}
+                          href="/MT_Grad_Full_V1.1.1_Bg.pdf"
+                          alt="Mehul Tanwar Extended Résumé"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Download my Résumé
+                        </MotionBox>
                       </MotionBox>
                     </motion.div>
                   </Box>

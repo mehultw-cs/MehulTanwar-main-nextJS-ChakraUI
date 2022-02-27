@@ -16,7 +16,6 @@ import {
 
 import stackItems from './Stack.data';
 
-
 // framer motion hooks
 
 //to check if div is in view
@@ -31,17 +30,12 @@ import { useAnimation, motion } from 'framer-motion';
 
 import { useEffect } from 'react';
 
-
 const Stack = () => {
-
-
   const [stackContainerRef, stackContainerInView] = useInView();
-
 
   //animation hook from framer motion
 
   const fullSlideNegXAnimation = useAnimation();
- 
 
   // useEffect does something
 
@@ -69,42 +63,51 @@ const Stack = () => {
     }
   }, [stackContainerInView]);
 
-  
-
   return (
     <>
-      <motion.div ref={stackContainerRef} animate={fullSlideNegXAnimation}>
-        <Center>
-          <Heading as="h4" fontSize="xl" pb="2rem">
-            Tech Stack
-          </Heading>
-        </Center>
-        <Center>
-          <Box
-            as="techstackbox"
-            w="98vw"
-            height={['10vh', '10vh', '10vh', '10vh']}
-            p={['0.75rem', '', '', '0.75rem']}
-            py={['', '', '', '0.5rem']}
-            mb={['7vh', '', '', '0rem']}
-            
-            borderRadius="lg"
-            className="techstackbox"
-          >
-            <HStack as="techstack" gap="1.75rem" justify="space-between">
-              {stackItems.map((stackItem, i) => (
-                <Image
-                  src={stackItem.image}
-                  maxWidth="5rem"
-                  key={i}
-                  preserveAspectRatio="true"
-                  alt={"Name of the tool used in stack, which is: " + stackItem.label}
-                ></Image>
-              ))}
-            </HStack>
-          </Box>
-        </Center>
-      </motion.div>
+      <Box>
+        <motion.div ref={stackContainerRef} animate={fullSlideNegXAnimation}>
+          <Center>
+            <Heading as="h4" fontSize="2xl" py="2rem" className="crgrBgTxt">
+              Tech Stack
+            </Heading>
+          </Center>
+          <Center>
+            <Box
+              as="techstackbox"
+              w="100%"
+              height={['10vh', '10vh', '10vh', '10vh']}
+              p={['0.75rem', '', '', '0.75rem']}
+              py={['', '', '0.75rem', '0.5rem']}
+              mb={['1rem', '1rem', '0.5rem', '0rem']}
+              borderRadius="lg"
+              className="techstackbox"
+              px={['', '', '', '2rem']}
+            >
+              <HStack
+                as="techstack"
+                gap="1.75rem"
+                justify="space-between"
+                w="100%"
+                px="0.75rem"
+              >
+                {stackItems.map((stackItem, i) => (
+                  <Image
+                    src={stackItem.image}
+                    maxWidth="5rem"
+                    key={i}
+                    preserveAspectRatio="true"
+                    alt={
+                      'Name of the tool used in stack, which is: ' +
+                      stackItem.label
+                    }
+                  ></Image>
+                ))}
+              </HStack>
+            </Box>
+          </Center>
+        </motion.div>
+      </Box>
     </>
   );
 };

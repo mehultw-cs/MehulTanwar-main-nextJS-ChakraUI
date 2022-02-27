@@ -112,11 +112,12 @@ const Skills = () => {
 
   return (
     <>
-      <Box p="5rem" id="skills">
+      <Box py="5rem" id="skills" px={['0.75rem', '1rem', '2.5rem', '3rem']}>
         <Box
           bgImage="/graph_gradient.png"
           bgRepeat="no-repeat"
-          bgSize="100%"
+          bgPos="center"
+          bgSize={['300%', '170%', '170%', '100%']}
           my="10em"
         >
           <Box
@@ -155,17 +156,18 @@ const Skills = () => {
                     the past years. I have added progress bars that show you 3
                     things in this order: &nbsp;
                     <Text d="inline" color="#007EE9">
-                      Proficiency
+                      Proficiency &nbsp;
                     </Text>
-                    ( How well do I know the language) ,{' '}
+                    ( How well do I know the language ) ; &nbsp;
                     <Text d="inline" color="#ECB543">
-                      Experience
+                      Experience &nbsp;
                     </Text>
-                    (How much have I used it, do I have experience with it), and{' '}
+                    ( How much have I used it, do I have experience with it ) ;
+                    and &nbsp;
                     <Text d="inline" color="#00F130">
-                      Joy
+                      Joy &nbsp;
                     </Text>
-                    (Do enjoy working with this technology)
+                    ( Do I enjoy working with this technology )
                   </Text>
                 </Center>
               </Container>
@@ -180,7 +182,6 @@ const Skills = () => {
                 justify="space-between"
                 align="center"
                 w="98vw"
-                
                 p="2rem"
                 mb="1.5rem"
                 className="skillsarea"

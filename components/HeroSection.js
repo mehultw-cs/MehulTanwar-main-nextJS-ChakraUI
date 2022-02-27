@@ -4,6 +4,7 @@ import {
   Heading,
   Text,
   Center,
+  Container,
   useColorModeValue,
 } from '@chakra-ui/react';
 
@@ -92,7 +93,6 @@ const HeroSection = () => {
               as="herocontainer"
               display="flex"
               flexDirection="column"
-              height={['50vh', '42vh', '38vh', '44vh', '40vh']}
               width={['95vw', '64vw', '53vw', '39vw']}
               py={['2.5rem', '2.5rem']}
               px={['1.5rem', '2rem', '2rem', '2.5rem']}
@@ -161,6 +161,10 @@ const HeroSection = () => {
                       bounce: '0.3',
                     }}
                   >
+                    <MotionBox
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                     <NextLink href="#about" passHref>
                       <MotionBox
                         as="a"
@@ -187,7 +191,7 @@ const HeroSection = () => {
                       >
                         Learn More
                       </MotionBox>
-                    </NextLink>
+                    </NextLink></MotionBox>
                   </motion.div>
                 </Box>
               </Center>

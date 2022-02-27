@@ -210,7 +210,7 @@ const Work = () => {
                   boxShadow="lg"
                   bgColor={sectionGlassColor}
                   borderRadius="xl"
-                  m={['', '', '', '2rem']}
+                  m={['0.75rem', '', '', '2rem']}
                   p={['1.25rem', '2rem', '2rem', '2rem']}
                   mx="auto"
                   mb="3rem"
