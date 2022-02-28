@@ -142,16 +142,10 @@ const NavBar = () => {
                 <NextLink href="/" passHref>
                   <Text
                     as="a"
-                    bgGradient="radial( #3ac6e4, #225df4)"
-                    bgClip="text"
+                   
                     fontSize={['2xl', '2xl', '3xl', '3xl']}
                     fontWeight="bold"
-                    _hover={{
-                      bgGradient: 'radial( #225df4,#3ac6e4)',
-                      bgClip: 'text',
-
-                      fontWeight: 'bold',
-                    }}
+                   
                     className="trgrBgTxt"
                   >
                     &#60;&#123;.MT/&#125;&#62;
@@ -368,7 +362,7 @@ const NavBar = () => {
       </Box>
 
       {/* Mobile Home Link */}
-      <Center>
+    
         <NextLink href="/" passHref>
           <Flex
             bgColor={navBgColor}
@@ -381,6 +375,7 @@ const NavBar = () => {
             z-index="10"
             position="fixed"
             justifyContent="center"
+            left="0.75rem"
             alignItems="center"
             width="8rem"
             height="8rem"
@@ -390,16 +385,10 @@ const NavBar = () => {
             <Center>
               <Text
                 as="a"
-                bgGradient="radial( #3ac6e4, #225df4)"
-                bgClip="text"
+                
                 fontSize={['2xl', '2xl', '3xl', '3xl']}
                 fontWeight="bold"
-                _hover={{
-                  bgGradient: 'radial( #225df4,#3ac6e4)',
-                  bgClip: 'text',
-
-                  fontWeight: 'bold',
-                }}
+                
                 className="trgrBgTxt"
               >
                 &#60;&#123;.MT/&#125;&#62;
@@ -407,7 +396,7 @@ const NavBar = () => {
             </Center>
           </Flex>
         </NextLink>
-      </Center>
+      
 
       {/* Menu button */}
       <Flex

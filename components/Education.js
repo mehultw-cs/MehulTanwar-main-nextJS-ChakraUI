@@ -169,22 +169,24 @@ const Education = () => {
               </Text>
               <Text>
                 My interest in Computer Science originated in 11<sup>th</sup>
-                grade in an introductory to CS class. I instantly fell in love
-                with CS and knew it is a great tool to make this world a better
-                place. Since then I knew I would work with CS in some form.
+                &nbsp;grade in an introductory to CS class. I instantly fell in
+                love with CS and knew it is a great tool to make this world a
+                better place. Since then I knew I would work with CS in some
+                form.
               </Text>
               <Text>
-                After switching to Computer Science in my 2<sup>nd</sup> year, I
-                was led into a world of realizing how interconnected everything
-                is. The computers on which our modern world works are based on
-                biological-machines (us) and whoever interacts with this
-                technology also happens to be a biological machine. So in CS we
-                learned how to build systems that are optimal to be used by
-                humans. To understand how to present information / predict human
-                actions, potential interactions, some knowledge of human
-                psychology was required. It turns out it was also useful to
-                learn psychology if you are to design Artificial Intelligence
-                systems or to market products to consumers.
+                After switching to Computer Science in my 2<sup>nd</sup>{' '}
+                &nbsp;year, I was led into a world of realizing how
+                interconnected everything is. The computers on which our modern
+                world works are based on biological-machines (us) and whoever
+                interacts with this technology also happens to be a biological
+                machine. So in CS we learned how to build systems that are
+                optimal to be used by humans. To understand how to present
+                information / predict human actions, potential interactions,
+                some knowledge of human psychology was required. It turns out it
+                was also useful to learn psychology if you are to design
+                Artificial Intelligence systems or to market products for
+                consumers.
               </Text>
               <Text>
                 My Education ultimately led me to a breadth of varied courses

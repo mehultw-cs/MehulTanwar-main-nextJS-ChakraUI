@@ -147,7 +147,7 @@ const Work = () => {
                 >
                   Over the past years I have been working in the technology
                   industry. I love to be in the tech sector, the opportunities
-                  are amazing and from all sectors.
+                  are amazing and from all sorts of industries, from agriculture to geology and astrophysics. Technology as a tool can and will be utilized by humans in all kinds of industries and sectors.
                   <Text>
                     I have been working on web applications, particularly in
                     front-end over the last few years. I would love to engage in
@@ -201,7 +201,7 @@ const Work = () => {
             >
               {workData.map((workData, i) => (
                 <GridItem
-                  as="workCard"
+                  as="workcard"
                   align="center"
                   display={['flex']}
                   flexWrap={['', 'wrap']}

@@ -5,7 +5,7 @@ export default [
     org: "Saint Mary's University",
     role: 'Technology Assistant (Co-op 3, Full Time)',
     when: 'Sept 2020 - Dec 2020',
-    data: 'Maintaining and building the SMUEC Website using wordpress was my 3rd and final Co-Op work placements. My role was to help the current website admin to maintain and create new content for the organization, help with onboarding new clients, create website intake form for web projects done by SMUEC for clients, and fulfil some web projects. After this term, the workload at the organization increased drastically while my hours went to part time to continue education.',
+    data: 'Maintaining and building the SMUEC Website using wordpress was my 3rd and final Co-Op work placements. My role was to help the current website admin to maintain and create new content for the organization, help with onboarding new clients, create website intake form for web projects done by SMUEC for clients, and fulfil some web projects. I used Wordpress and Divi theme builder which were the tools in use at the organization. It used some aspect of PHP, mostly HTML, CSS and JavaScript allowed to get custom components when necessary. Workload after this co-op increased while my hours went to part-time.',
     img1: '',
     img2: '',
     img3: '',
@@ -28,7 +28,7 @@ export default [
     label: 'Information Technology Systems and Services',
     org: "Saint Mary's University",
     role: 'Helpdesk Student Staff (Part time)',
-    when: 'Apr 2017 - Jun 2019',
+    when: 'Apr 2017 - Jan 2020',
     data: 'I have worked for ITSS most of my university years. It was a great place to learn how the university functions, and how technology is used throughout all levels of hierarchy , from students to academic and administration. I loved working here because there was always something there to learn, and since it was part of the university, I had a great time managing work loads and education loads. This was one of my starting points in the technology industry.',
     img1: '',
     img2: '',
@@ -63,7 +63,7 @@ export default [
     org: "Saint Mary's University",
     role: 'Project Manager: Technology (Part time)',
     when: 'Jan 2021 - Aug 2021',
-    data: ' After my Co-op with SMUEC in Dec 2020, I stayed on to maintain the website while I had a full course load of studies. Later I realized that my direct supervisor was moving out of province which put most website related responsibilities on me as a part timer. After maintaining the website till March/April, I was told to redisign the entire UI/UX and make the website more appealing and fast as a University wide rebranding was approaching. Since I had taken over the website on WordPress which was made by someone else, many of the styling for the rebrand did not work properly. After spending months on somewhat working styles for the rebrand, I asked my superiors to import the design into the old website structure for refreshment, however this was not completed by the organization at the end of the day.',
+    data: ' After my Co-op with SMUEC in Dec 2020, I stayed on to maintain the website while I had a full course load of studies. Later I realized that my direct supervisor was moving out of province which put most website related responsibilities on me as a part timer. After maintaining the website till March/April, I was told to re-design the entire UI/UX and make the website more appealing and fast as a University wide re-branding was approaching. Since I had taken over the website on WordPress which was made by someone else, many of the styling for the re-brand did not work properly. After spending months on somewhat working styles for the re-brand, I asked my superiors to import the design into the old website structure for refreshment, however this was not implemented by the organization at the end of the day.',
     img1: '',
     img2: '',
     img3: '',
@@ -104,4 +104,3 @@ export default [
     img3: '',
   },
 ];
-
