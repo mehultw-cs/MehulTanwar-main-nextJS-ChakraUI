@@ -214,36 +214,73 @@ const AboutMeSection = () => {
                     </Text>
                     <motion.div animate={slideXAnimation}>
                       <MotionBox
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                      // whileHover={{ scale: 1.1 }}
+                      // whileTap={{ scale: 0.9 }}
                       >
-                        <MotionBox
-                          as="a"
-                          ref={butRef}
-                          color={astextColor}
-                          fontWeight="bold"
-                          fontSize="lg"
-                          bgGradient="linear(to-tr,#23922e,#13BB35)"
-                          px="1.33rem"
-                          py="1.5"
-                          mt="2rem"
-                          borderRadius="3xl"
-                          boxShadow="lg"
-                          mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
-                          transition="all 0.25s ease-in"
-                          font="Montserrat"
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.9 }}
-                          _hover={{ color: 'white' }}
-                          _active={{ color: 'white' }}
-                          _visited={{ color: 'white' }}
-                          href="/MT_Grad_Full_V1.1.1_Bg.pdf"
-                          alt="Mehul Tanwar Extended Résumé"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Flex
+                          flexDirection="column"
+                          alignItems="center"
+                          justifyContent="center"
                         >
-                          Download my Résumé
-                        </MotionBox>
+                          <Center>
+                            <MotionBox
+                              as="a"
+                              ref={butRef}
+                              color={astextColor}
+                              fontWeight="bold"
+                              fontSize="lg"
+                              bgGradient="linear(to-tr,#23922e,#13BB35)"
+                              px="1.33rem"
+                              py="1.5"
+                              mt="2rem"
+                              borderRadius="3xl"
+                              boxShadow="lg"
+                              mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
+                              transition="all 0.25s ease-in"
+                              font="Montserrat"
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              _hover={{ color: 'white' }}
+                              _active={{ color: 'white' }}
+                              _visited={{ color: 'white' }}
+                              href="/Mehul's Résumé Oct22_2.pdf"
+                              alt="Mehul Tanwar's Résumé"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Download my Résumé
+                            </MotionBox>
+                          </Center>
+                          <Center>
+                            <MotionBox
+                              as="a"
+                              ref={butRef}
+                              color={astextColor}
+                              fontWeight="bold"
+                              fontSize="lg"
+                              bgGradient="linear(to-tr,#23922e,#13BB35)"
+                              px="1.33rem"
+                              py="1.5"
+                              mt="2rem"
+                              borderRadius="3xl"
+                              boxShadow="lg"
+                              mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
+                              transition="all 0.25s ease-in"
+                              font="Montserrat"
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              _hover={{ color: 'white' }}
+                              _active={{ color: 'white' }}
+                              _visited={{ color: 'white' }}
+                              href="/Mehul's Extended Résumé Oct22_2.pdf"
+                              alt="Mehul Tanwar's Extended Résumé"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Download Extended Résumé
+                            </MotionBox>
+                          </Center>
+                        </Flex>
                       </MotionBox>
                     </motion.div>
                   </Box>

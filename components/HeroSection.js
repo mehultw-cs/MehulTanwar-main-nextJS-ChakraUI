@@ -138,10 +138,9 @@ const HeroSection = () => {
                 ></Typical>
               </Box>
               <Text>
-                This is a personal portfolio website which gives you a glimpse
-                of me. I created this project for potential employers, future
-                colleagues and friends. This is mostly verbose and 100%
-                authentic.
+                This is a personal website which gives you a glimpse of me. I
+                created this project for myself, a place where I can express
+                myself how I see fit. This is mostly verbose and 100% authentic.
               </Text>
               <Text> &nbsp;</Text>
               <Text>This website is being developed while deployed..</Text>
@@ -162,36 +161,37 @@ const HeroSection = () => {
                     }}
                   >
                     <MotionBox
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                    <NextLink href="#about" passHref>
-                      <MotionBox
-                        as="a"
-                        px={['1.75rem', '2.25rem', '2.5rem', '2.75rem']}
-                        py={['0.8rem', '0.9rem', '0.8rem', '1rem']}
-                        borderRadius={['4rem', '4rem', '4rem', '4rem']}
-                        fontWeight="bold"
-                        fontSize="lg"
-                        bgGradient="linear(to-tr,#23922e,#13BB35)"
-                        boxShadow="lg"
-                        mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
-                        transition="all 0.25s ease-in"
-                        font="Montserrat"
-                        _active={{
-                          color: 'white',
-                          textDecoration: 'underline',
-                          fontWeight: 'bold',
-                        }}
-                        _visited={{
-                          color: 'white',
-                        }}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                      >
-                        Learn More
-                      </MotionBox>
-                    </NextLink></MotionBox>
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <NextLink href="#about" passHref>
+                        <MotionBox
+                          as="a"
+                          px={['1.75rem', '2.25rem', '2.5rem', '2.75rem']}
+                          py={['0.8rem', '0.9rem', '0.8rem', '1rem']}
+                          borderRadius={['4rem', '4rem', '4rem', '4rem']}
+                          fontWeight="bold"
+                          fontSize="lg"
+                          bgGradient="linear(to-tr,#23922e,#13BB35)"
+                          boxShadow="lg"
+                          mx={['0.02rem', '0.02rem', '0.02rem', '0.25rem']}
+                          transition="all 0.25s ease-in"
+                          font="Montserrat"
+                          _active={{
+                            color: 'white',
+                            textDecoration: 'underline',
+                            fontWeight: 'bold',
+                          }}
+                          _visited={{
+                            color: 'white',
+                          }}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                        >
+                          Learn More
+                        </MotionBox>
+                      </NextLink>
+                    </MotionBox>
                   </motion.div>
                 </Box>
               </Center>

@@ -23,7 +23,7 @@ export default [
   // },
   {
     label: 'CloudFlare',
-    image: 'https://cdn.cdnlogo.com/logos/c/26/cloudflare.svg',
+    image:"https://cdn.cdnlogo.com/logos/c/5/cloudflare.svg",
     link: 'https://www.cloudflare.com/',
   },
   {

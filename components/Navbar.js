@@ -142,10 +142,8 @@ const NavBar = () => {
                 <NextLink href="/" passHref>
                   <Text
                     as="a"
-                   
                     fontSize={['2xl', '2xl', '3xl', '3xl']}
                     fontWeight="bold"
-                   
                     className="trgrBgTxt"
                   >
                     &#60;&#123;.MT/&#125;&#62;
@@ -348,7 +346,7 @@ const NavBar = () => {
                   _hover={{ color: 'white' }}
                   _active={{ color: 'white' }}
                   _visited={{ color: 'white' }}
-                  href="/MT_Grad_Full_V1.1.1_Bg.pdf"
+                  href="/Mehul's Résumé Oct22_2.pdf"
                   alt="Mehul Tanwar Extended Résumé"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -362,41 +360,38 @@ const NavBar = () => {
       </Box>
 
       {/* Mobile Home Link */}
-    
-        <NextLink href="/" passHref>
-          <Flex
-            bgColor={navBgColor}
-            color={astextColor}
-            backdropFilter="auto"
-            backdropBlur="4.65px"
-            borderRadius="4rem"
-            bottom={['-1.5rem', '-1.5rem', '-1rem', '1rem']}
-            d={['flex', 'flex', 'flex', 'none']}
-            z-index="10"
-            position="fixed"
-            justifyContent="center"
-            left="0.75rem"
-            alignItems="center"
-            width="8rem"
-            height="8rem"
-            cursor="pointer"
-            boxShadow="lg"
-          >
-            <Center>
-              <Text
-                as="a"
-                
-                fontSize={['2xl', '2xl', '3xl', '3xl']}
-                fontWeight="bold"
-                
-                className="trgrBgTxt"
-              >
-                &#60;&#123;.MT/&#125;&#62;
-              </Text>
-            </Center>
-          </Flex>
-        </NextLink>
-      
+
+      <NextLink href="/" passHref>
+        <Flex
+          bgColor={navBgColor}
+          color={astextColor}
+          backdropFilter="auto"
+          backdropBlur="4.65px"
+          borderRadius="4rem"
+          bottom={['-1.5rem', '-1.5rem', '-1rem', '1rem']}
+          d={['flex', 'flex', 'flex', 'none']}
+          z-index="10"
+          position="fixed"
+          justifyContent="center"
+          left="0.75rem"
+          alignItems="center"
+          width="8rem"
+          height="8rem"
+          cursor="pointer"
+          boxShadow="lg"
+        >
+          <Center>
+            <Text
+              as="a"
+              fontSize={['2xl', '2xl', '3xl', '3xl']}
+              fontWeight="bold"
+              className="trgrBgTxt"
+            >
+              &#60;&#123;.MT/&#125;&#62;
+            </Text>
+          </Center>
+        </Flex>
+      </NextLink>
 
       {/* Menu button */}
       <Flex
@@ -641,7 +636,7 @@ const NavBar = () => {
                 _hover={{ color: 'white' }}
                 _active={{ color: 'white' }}
                 _visited={{ color: 'white' }}
-                href="/MT_Grad_Full_V1.1.1_Bg.pdf"
+                href="/Mehul's Résumé Oct22_2.pdf"
                 alt="Mehul Tanwar Extended Résumé"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -13,6 +13,7 @@ import {
   Divider,
   Text,
 } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 import stackItems from './Stack.data';
 
@@ -68,7 +69,13 @@ const Stack = () => {
       <Box>
         <motion.div ref={stackContainerRef} animate={fullSlideNegXAnimation}>
           <Center>
-            <Heading as="h4" fontSize="2xl" py="2rem" className="crgrBgTxt">
+            <Heading
+              as="h4"
+              fontSize="2xl"
+              py="2rem"
+              pb="0.35rem"
+              className="crgrBgTxt"
+            >
               Tech Stack
             </Heading>
           </Center>
@@ -76,7 +83,7 @@ const Stack = () => {
             <Box
               as="techstackbox"
               w="100%"
-              height={['10vh', '10vh', '10vh', '10vh']}
+              height={['32vh', '28.75vh', '30vh', '30vh']}
               p={['0.75rem', '', '', '0.75rem']}
               py={['', '', '0.75rem', '0.5rem']}
               mb={['1rem', '1rem', '0.5rem', '0rem']}
@@ -92,16 +99,33 @@ const Stack = () => {
                 px="0.75rem"
               >
                 {stackItems.map((stackItem, i) => (
-                  <Image
-                    src={stackItem.image}
-                    maxWidth="5rem"
-                    key={i}
-                    preserveAspectRatio="true"
-                    alt={
-                      'Name of the tool used in stack, which is: ' +
-                      stackItem.label
-                    }
-                  ></Image>
+                  <>
+                    <Box d="flex" flexDirection="column" gap="0.5em">
+                      <NextLink href={stackItem.link}>
+                        <Image
+                          cursor="pointer"
+                          src={stackItem.image}
+                          maxWidth="8rem"
+                          key={i}
+                          preserveAspectRatio="true"
+                          alt={
+                            'Name of the tool used in stack, which is: ' +
+                            stackItem.label
+                          }
+                        ></Image>
+                      </NextLink>
+                      <NextLink href={stackItem.link}>
+                        <Text
+                          align="center"
+                          fontSize="xl"
+                          pt={['', '', '', '']}
+                          cursor="pointer"
+                        >
+                          {stackItem.label}
+                        </Text>
+                      </NextLink>
+                    </Box>
+                  </>
                 ))}
               </HStack>
             </Box>

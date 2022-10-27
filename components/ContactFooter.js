@@ -35,25 +35,18 @@ import { BsLaptop } from 'react-icons/bs';
 import Stack from './Stack';
 
 const glassColor = {
-  light: '#fefefe99',
+  light: '#fefefecc',
   dark: '#20202077',
 };
 
-
-
 // animation motion Box
 const MotionBox = motion(Box);
-
 
 const ContactFooter = () => {
   const sectionGlassColor = useColorModeValue(
     glassColor.light,
     glassColor.dark
   );
-
-
-
-
 
   return (
     <>
@@ -146,58 +139,60 @@ const ContactFooter = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                <NextLink href="https://github.com/mehultw-cs">
-                  <Box
-                    bgColor={sectionGlassColor}
-                    borderRadius="xl"
-                    boxShadow="xl"
-                    backdropFilter="auto"
-                    backdropBlur="6px"
-                    px={['', '', '0.75rem', '1rem']}
-                    py={['0.25rem', '0.5rem', '0.75rem', '0.5rem']}
-                    maxH="2.75rem"
-                    minW="9rem"
-                    _hover={{ color: 'whatsapp.500' }}
-                    cursor="pointer"
-                  >
-                    <Center>
-                      <Box d="inline">
-                        <Icon as={FaGithub} />
-                      </Box>
-                      <Box d="inline" px="1rem">
-                        <Text d="inline">Github 1</Text>
-                      </Box>
-                    </Center>
-                  </Box>
-                </NextLink></MotionBox>
+                  <NextLink href="https://github.com/mehultw-cs">
+                    <Box
+                      bgColor={sectionGlassColor}
+                      borderRadius="xl"
+                      boxShadow="xl"
+                      backdropFilter="auto"
+                      backdropBlur="6px"
+                      px={['', '', '0.75rem', '1rem']}
+                      py={['0.25rem', '0.5rem', '0.75rem', '0.5rem']}
+                      maxH="2.75rem"
+                      minW="9rem"
+                      _hover={{ color: 'whatsapp.500' }}
+                      cursor="pointer"
+                    >
+                      <Center>
+                        <Box d="inline">
+                          <Icon as={FaGithub} />
+                        </Box>
+                        <Box d="inline" px="1rem">
+                          <Text d="inline">Github 1</Text>
+                        </Box>
+                      </Center>
+                    </Box>
+                  </NextLink>
+                </MotionBox>
                 <MotionBox
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                <NextLink href="https://github.com/mehultw">
-                  <Box
-                    bgColor={sectionGlassColor}
-                    borderRadius="xl"
-                    boxShadow="xl"
-                    backdropFilter="auto"
-                    backdropBlur="6px"
-                    py={['0.25rem', '0.5rem', '0.75rem', '0.5rem']}
-                    maxH="2.75rem"
-                    px={['', '', '0.75rem', '1rem']}
-                    _hover={{ color: 'whatsapp.500' }}
-                    minW="9rem"
-                    cursor="pointer"
-                  >
-                    <Center>
-                      <Box d="inline">
-                        <Icon as={FaGithub} />
-                      </Box>
-                      <Box d="inline" px="1rem">
-                        <Text d="inline">Github 2</Text>
-                      </Box>
-                    </Center>
-                  </Box>
-                </NextLink></MotionBox>
+                  <NextLink href="https://github.com/mehultw">
+                    <Box
+                      bgColor={sectionGlassColor}
+                      borderRadius="xl"
+                      boxShadow="xl"
+                      backdropFilter="auto"
+                      backdropBlur="6px"
+                      py={['0.25rem', '0.5rem', '0.75rem', '0.5rem']}
+                      maxH="2.75rem"
+                      px={['', '', '0.75rem', '1rem']}
+                      _hover={{ color: 'whatsapp.500' }}
+                      minW="9rem"
+                      cursor="pointer"
+                    >
+                      <Center>
+                        <Box d="inline">
+                          <Icon as={FaGithub} />
+                        </Box>
+                        <Box d="inline" px="1rem">
+                          <Text d="inline">Github 2</Text>
+                        </Box>
+                      </Center>
+                    </Box>
+                  </NextLink>
+                </MotionBox>
               </Box>
               <Box>
                 <HStack gap="0.75rem" justify="space-around" w="100%">
@@ -209,7 +204,7 @@ const ContactFooter = () => {
                       boxSize="2rem"
                     />
                     <Text d="inline" px="0.5rem" pt="0.25rem">
-                      Halifax
+                      SW Ontario
                     </Text>
                   </Box>
                   <Box>
@@ -224,18 +219,7 @@ const ContactFooter = () => {
                       Remote
                     </Text>
                   </Box>
-                  <Box>
-                    <Icon
-                      d="inline"
-                      ml={['1.35rem', '', '', '']}
-                      as={FaTruck}
-                      boxSize="2rem"
-                    />
 
-                    <Text d="inline" px="0.5rem" pt="0.25rem">
-                      Relocate
-                    </Text>
-                  </Box>
                   <Box>
                     <Icon
                       d="inline"
