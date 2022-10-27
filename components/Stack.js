@@ -101,8 +101,9 @@ const Stack = () => {
                 {stackItems.map((stackItem, i) => (
                   <>
                     <Box d="flex" flexDirection="column" gap="0.5em">
-                      <NextLink href={stackItem.link}>
-                        <Image
+                      <NextLink href={stackItem.link} passHref>
+                        <a target='_blank'>
+                          <Image
                           cursor="pointer"
                           src={stackItem.image}
                           maxWidth="8rem"
@@ -113,8 +114,10 @@ const Stack = () => {
                             stackItem.label
                           }
                         ></Image>
+                        </a>
                       </NextLink>
-                      <NextLink href={stackItem.link}>
+                      <NextLink href={stackItem.link} passHref>
+                        <a target='_blank'>
                         <Text
                           align="center"
                           fontSize="xl"
@@ -123,6 +126,7 @@ const Stack = () => {
                         >
                           {stackItem.label}
                         </Text>
+                        </a>
                       </NextLink>
                     </Box>
                   </>
