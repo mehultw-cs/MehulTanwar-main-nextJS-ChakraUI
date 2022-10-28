@@ -346,7 +346,7 @@ const NavBar = () => {
                   _hover={{ color: 'white' }}
                   _active={{ color: 'white' }}
                   _visited={{ color: 'white' }}
-                  href="/Mehul's Résumé Oct22_2.pdf"
+                  href="/Mehul's Résumé Oct22_4.pdf"
                   alt="Mehul Tanwar Extended Résumé"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -636,7 +636,7 @@ const NavBar = () => {
                 _hover={{ color: 'white' }}
                 _active={{ color: 'white' }}
                 _visited={{ color: 'white' }}
-                href="/Mehul's Résumé Oct22_2.pdf"
+                href="/Mehul's Résumé Oct22_4.pdf"
                 alt="Mehul Tanwar Extended Résumé"
                 target="_blank"
                 rel="noopener noreferrer"

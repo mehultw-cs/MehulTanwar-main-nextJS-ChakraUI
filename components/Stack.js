@@ -102,30 +102,30 @@ const Stack = () => {
                   <>
                     <Box d="flex" flexDirection="column" gap="0.5em">
                       <NextLink href={stackItem.link} passHref>
-                        <a target='_blank'>
+                        <a target="_blank">
                           <Image
-                          cursor="pointer"
-                          src={stackItem.image}
-                          maxWidth="8rem"
-                          key={i}
-                          preserveAspectRatio="true"
-                          alt={
-                            'Name of the tool used in stack, which is: ' +
-                            stackItem.label
-                          }
-                        ></Image>
+                            cursor="pointer"
+                            src={stackItem.image}
+                            maxWidth="8rem"
+                            key={i}
+                            preserveAspectRatio="true"
+                            alt={
+                              'Name of the tool used in stack, which is: ' +
+                              stackItem.label
+                            }
+                          ></Image>
                         </a>
                       </NextLink>
                       <NextLink href={stackItem.link} passHref>
-                        <a target='_blank'>
-                        <Text
-                          align="center"
-                          fontSize="xl"
-                          pt={['', '', '', '']}
-                          cursor="pointer"
-                        >
-                          {stackItem.label}
-                        </Text>
+                        <a target="_blank">
+                          <Text
+                            align="center"
+                            fontSize="xl"
+                            pt={['', '', '', '']}
+                            cursor="pointer"
+                          >
+                            {stackItem.label}
+                          </Text>
                         </a>
                       </NextLink>
                     </Box>

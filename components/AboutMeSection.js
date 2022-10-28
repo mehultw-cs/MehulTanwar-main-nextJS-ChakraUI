@@ -243,7 +243,7 @@ const AboutMeSection = () => {
                               _hover={{ color: 'white' }}
                               _active={{ color: 'white' }}
                               _visited={{ color: 'white' }}
-                              href="/Mehul's Résumé Oct22_2.pdf"
+                              href="/Mehul's Résumé Oct22_4.pdf"
                               alt="Mehul Tanwar's Résumé"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -272,7 +272,7 @@ const AboutMeSection = () => {
                               _hover={{ color: 'white' }}
                               _active={{ color: 'white' }}
                               _visited={{ color: 'white' }}
-                              href="/Mehul's Extended Résumé Oct22_2.pdf"
+                              href="/Mehul's Extended Résumé Oct22_4.pdf"
                               alt="Mehul Tanwar's Extended Résumé"
                               target="_blank"
                               rel="noopener noreferrer"
